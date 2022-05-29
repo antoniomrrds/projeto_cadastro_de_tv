@@ -1,5 +1,5 @@
 # via cmd
- # Instalar depdendecias 
+ # Instalar dependencias 
     npm install 
  # Rodar o backend
     dentro da pasta backend
