@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
+.msg-success{
+    background-color: #28a745;
+    color: #fff;
+}
+.msg-error{
+    background-color: red;
+    color: #fff;
+}
+.bold {
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.cabecalho {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+}
+
+.edit {
+    color:#ffff00;
+    margin-right: 20px;
+}
+
+.delete {
+    color: #ff0000;
+}

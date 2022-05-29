@@ -1,0 +1,99 @@
+<div class="grid-container">
+  <h1 class="mat-h1" class="text-center dashboard-card-style ">Orçamento</h1>
+
+  <mat-grid-list class="dashboard-color text-center d-flex justify-content-around flex-wrap mb-5" cols="2"
+    rowHeight="250">
+    <mat-grid-tile>
+      <mat-card class="dashboard-card  d-flex justify content center flex-column">
+        <mat-card-header class="d-flex justify-content-center">
+          <mat-card-title class="text-center">
+            <h1 class=" dashboard-card-style">Investimento Inicial</h1>
+
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card class="w-auto vh-100 d-flex align-items-center justify-content-center">
+          <mat-card-header class="dashboard-card-style">
+            <mat-card-title class="dashboard-card-style">{{initialInvestment()| currency: 'BRL' }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+          </mat-card-content>
+        </mat-card>
+      </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile>
+      <mat-card class="dashboard-card  d-flex justify content center flex-column">
+        <mat-card-header class="d-flex justify-content-center">
+          <mat-card-title class="text-center">
+            <h1 class=" dashboard-card-style">Mensalidade</h1>
+
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card class="w-auto vh-100 d-flex align-items-center justify-content-center">
+          <mat-card-header class="dashboard-card-style">
+            <mat-card-title class="dashboard-card-style">R$ {{totalPlane()| currency: 'BRL' }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+          </mat-card-content>
+        </mat-card>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="1" class="" rowHeight="350px">
+    <mat-grid-tile>
+      <mat-card class="dashboard-card mb-5">
+        <mat-card-header>
+          <mat-card-title>
+
+          </mat-card-title>
+        </mat-card-header>
+
+        <mat-card>
+
+          <div>
+            <mat-form-field class="mx-4 w-auto result" appearance="fill">
+              <mat-label color="warn ">Quantidade</mat-label>
+              <input matInput class="result" [(ngModel)]='theAmount' align="end" type="number">
+              <span matSuffix>.00</span>
+            </mat-form-field>
+
+            <mat-form-field class="w-auto" appearance="fill">
+              <mat-label>Planos</mat-label>
+              <mat-select [(ngModel)]='planeValue'>
+                <mat-option *ngFor="let valueOfPlans of planeYearly" [value]="valueOfPlans.valuePlane">
+                  {{valueOfPlans.name}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="mx-4 vw-auto result " appearance="fill">
+              <mat-label>Valor total do plano</mat-label>
+              <input matInput disabled [value]="totalPlane()| currency: 'BRL' " placeholder="0">
+            </mat-form-field>
+
+
+            <mat-form-field class="mx-4 w-auto result" appearance="fill">
+              <mat-label>Licensas</mat-label>
+              <input matInput class="result" [(ngModel)]='license' align="end" type="number">
+              <span matSuffix>.00</span>
+            </mat-form-field>
+
+            <mat-form-field class="mx-4 w-auto result" appearance="fill">
+              <mat-label>Mão de Obra instalação</mat-label>
+              <input matInput class="result" [(ngModel)]='labor' align="end" type="number">
+              <span matSuffix>.00</span>
+            </mat-form-field>
+            <mat-form-field class="w-auto" appearance="fill">
+              <mat-label>Formas de pagamento</mat-label>
+              <mat-select [(ngModel)]='formOfPayment'>
+                <mat-option value="mensal">Mensal</mat-option>
+                <mat-option value="Anual">Anual</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </mat-card>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+  
+    <a class="navbar-brand" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-around " id="navbarText">
+      <div class="d-flex align-items-center">
+        <ul class="navbar-nav me-auto  mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" [routerLink]="['/']">Home</a>
+          </li>
+
+
+
+          <li class="nav-item dropdown mx-5 ">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              CRIAR
+            </a>
+            <ul class="dropdown-menu text.info " aria-labelledby="navbarDropdown">
+              <li>
+                <a class="nav-lin  text-center dropdown-item " value="product" [routerLink]="['/product-create']">Criar
+                  produtos</a>
+              </li>
+              <li>
+                <a class="text-center dropdown-item " value="player" [routerLink]="['/player-create']">Criar
+                  player</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown  ">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              TABELAS
+            </a>
+            <ul class="dropdown-menu text.info " aria-labelledby="navbarDropdown">
+              <li>
+                <a class="  text-center dropdown-item " value="product"
+                  [routerLink]="['/product-read']">Tabela de produtos</a>
+              </li>
+              <li>
+                <a class="text-center dropdown-item " value="player" [routerLink]="['/player-read']">Tabela de
+                  player</a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+
+    </div>
+  </div>
+</nav>

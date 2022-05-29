@@ -1,0 +1,51 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+
+.dashboard-card{
+  background-color: #1C57E1;
+  text-align: center;
+}
+.dashboard-card-style{
+  color:black;
+  font-weight: bolder;
+  font: size 1.5em;
+
+ 
+}
+
+input{
+  text-align:right;
+  
+}
+
+mat-label{
+  color:#1136C7;
+  font-size:20px;
+}
+.result{
+  color:black;
+  font-size: 1.2rem;
+}
+
+
+

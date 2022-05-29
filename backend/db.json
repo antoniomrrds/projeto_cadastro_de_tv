@@ -1,0 +1,41 @@
+{
+  "tvs": [
+    {
+      "name": "TV 32 polegadas ",
+      "theAmount": 4,
+      "valueUnity": 500,
+      "amount": 2000,
+      "id": 1
+    },
+    {
+      "name": "TV 40 polegadas \t",
+      "theAmount": 4,
+      "valueUnity": 1000,
+      "amount": 4000,
+      "id": 2
+    }
+  ],
+  "planos": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "players": [
+    {
+      "name": "Player Alphasignage",
+      "theAmount": 2,
+      "valueUnity": 292,
+      "amount": 584,
+      "id": 1
+    },
+    {
+      "name": "Player Alphasignage Secundário",
+      "theAmount": 2,
+      "valueUnity": 249,
+      "amount": 498,
+      "id": 2
+    }
+  ]
+}
